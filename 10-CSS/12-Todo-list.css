@@ -1,0 +1,110 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container */
+.todo-container {
+    background: #fff;
+    margin-top: 60px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Section */
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 160px 90px;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.inputStyle-css-name,
+.inputStyle-css-date {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.inputStyle-css-name:focus,
+.inputStyle-css-date:focus {
+    border-color: #4a90e2;
+}
+
+/* Add Button */
+.Add-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.Add-button:hover {
+    background-color: #357abd;
+}
+
+/* Todo Output Grid */
+.text-output-grid {
+    display: grid;
+    grid-template-columns: 1fr 160px 90px;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+/* Todo Items */
+.text-output-grid div {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Delete Button */
+.deleteButton-css {
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.deleteButton-css:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .input-grid,
+    .text-output-grid {
+        grid-template-columns: 1fr;
+    }
+}
